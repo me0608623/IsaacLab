@@ -16,13 +16,14 @@ simulation_app = AppLauncher(headless=True, enable_cameras=True).app
 """Rest everything follows."""
 
 import copy
-import numpy as np
 import random
+
+import numpy as np
+import pytest
 import torch
+from flaky import flaky
 
 import omni.replicator.core as rep
-import pytest
-from flaky import flaky
 from isaacsim.core.prims import SingleGeometryPrim, SingleRigidPrim
 from pxr import Gf, UsdGeom
 
