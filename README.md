@@ -2,6 +2,17 @@
 
 ---
 
+> **🤖 AI Assistant Documentation Available**
+>
+> For developers using Claude Code or Cursor AI with this project, comprehensive AI assistant documentation is available:
+> - **Quick Start**: Read `.claude/instructions.md` for project overview
+> - **Quick Reference**: `source/isaaclab_tasks/.../charge_sb3/AI_QUICK_REFERENCE.md`
+> - **Complete Manual**: `source/isaaclab_tasks/.../charge_sb3/AI_SESSION_MANUAL.md`
+>
+> Type `/charge-context` in Claude Code to load the Charge navigation project context.
+
+---
+
 # Isaac Lab
 
 [![IsaacSim](https://img.shields.io/badge/IsaacSim-5.1.0-silver.svg)](https://docs.isaacsim.omniverse.nvidia.com/latest/index.html)
