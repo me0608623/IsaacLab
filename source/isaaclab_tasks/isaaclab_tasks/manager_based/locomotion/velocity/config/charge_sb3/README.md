@@ -55,18 +55,18 @@
 | **最大速度** | 線速度 1.0 m/s，角速度 2.0 rad/s |
 | **控制頻率** | 50 Hz |
 
-### 觀測空間（140 維）
+### 觀測空間（131 維，Phase 3）
 
 ```python
 observation = [
-    lidar_scan,           # [131] LiDAR 掃描
+    lidar_scan,           # [72]  LiDAR 掃描（360°/5°=72 條射線）
+    speed,                # [2]   底盤線速度 (vx, vy)
     goal_position,        # [2]   目標相對位置
     goal_distance,        # [1]   到目標距離
-    base_velocity,        # [2]   底盤速度
-    angular_velocity,     # [1]   角速度
-    heading_error,        # [1]   朝向誤差
     time_remaining,       # [1]   剩餘時間
     alive_flag,           # [1]   存活標誌
+    actions,              # [2]   上一步動作
+    obstacles,            # [50]  障礙物資訊（10×5，Phase 3 為 padding）
 ]
 ```
 
